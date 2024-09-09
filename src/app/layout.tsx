@@ -33,7 +33,7 @@ export default function RootLayout({
           <ul>
             <li>
               <Link className='flex space-x-2 hover:opacity-90' href='/'>
-                <TSLogo />
+                <TSLogo height={75} />
               </Link>
             </li>
           </ul>
