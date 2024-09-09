@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 import Link from 'next/link'
-import TSLogo from './(components)/TsLogo'
+import TSLogo from '../components/TSLogo'
 import "./globals.css"
 
 const geistSans = localFont({
