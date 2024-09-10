@@ -95,7 +95,7 @@ export default function RootLayout({
 
         <footer className="p-2 w-full bg-theme-grey text-white">
           <div className="w-full grid grid-rows-1 space-y-2 text-center items-center justify-center md:flex">
-            <p>Made with  ❤  by
+            <p>Feito com  ❤  por
               <a target='_blank' rel="noopener" href='https://github.com/a1Thiago'>
                 <span> <span className='underline font-semibold'>a1Th</span> </span>
               </a>
