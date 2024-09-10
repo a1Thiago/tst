@@ -10,8 +10,7 @@ import {
   MenubarItem,
   MenubarMenu,
   MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
+  MenubarTrigger
 } from "@/components/ui/menubar"
 
 
@@ -42,10 +41,10 @@ export default function RootLayout({
 
         <header className='py-2 text-black border-b-[1px] border-b-theme-grey/30'>
 
-          <div className='mx-auto max-w-screen-xl py-4 px-4 md:px-8 flex'>
+          <div className='mx-auto max-w-screen-xl px-4 md:px-8 flex'>
             <Menubar>
               <MenubarMenu>
-                <MenubarTrigger>Desafios</MenubarTrigger>
+                <MenubarTrigger className='cursor-pointer'>Desafios</MenubarTrigger>
                 <MenubarContent>
                   <MenubarItem>
                     <Link href={'/desafio-1'}>

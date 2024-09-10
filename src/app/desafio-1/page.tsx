@@ -1,3 +1,6 @@
+import { Button } from '@/components/ui/button'
+import { ChevronRight, Home } from 'lucide-react'
+import Link from 'next/link'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
@@ -31,6 +34,22 @@ console.log(SOMA)
   return (
 
     <div >
+
+      <div className='flex justify-between py-4'>
+        <Link href='/'>
+          <Button className='flex gap-1'>
+            <Home size={16} />
+            <p>Início</p>
+          </Button>
+        </Link>
+
+        <Link href='/desafio-2'>
+          <Button className='flex gap-1'>
+            <ChevronRight size={16} />
+            <p>Desafio 2</p>
+          </Button>
+        </Link>
+      </div>
 
       <h2 className='font-bold text-xl py-2'>Desafio 1</h2>
 
