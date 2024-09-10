@@ -1,10 +1,12 @@
 
 import Link from 'next/link'
-import * as dados from '../../../public/dados.json'
+import * as jsonFile from '../../../public/dados.json'
 import { Button } from '@/components/ui/button'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 export default function Page() {
+
+  const dados = Array.from(jsonFile)
 
   // const lowerValue = dados.reduce((acc, curr) => curr.valor < acc.valor ? curr : acc, dados[0] || undefined)
   const lowestPositiveValue = dados.reduce((acc, curr) => curr.valor < acc.valor && curr.valor > 0 ? curr : acc, dados[0] || undefined)

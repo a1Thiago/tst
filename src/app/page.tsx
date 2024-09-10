@@ -15,8 +15,8 @@ export default function Home() {
         </Link>
       </div>
 
-      <object data="FS-ThiagoH.pdf" type="application/pdf" width="100%" height="90%" >
-        <p>Unable to display PDF file. <a href="FS-ThiagoH.pdf">Download</a> instead.</p>
+      <object data="FS-ThiagoH.pdf" type="application/pdf" width="100%" height="90%">
+        <p>Incapaz de exibir o PDF. <a href="FS-ThiagoH.pdf">Download</a> para visualizar.</p>
       </object>
     </div>
   )
