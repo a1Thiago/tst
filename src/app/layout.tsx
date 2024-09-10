@@ -4,6 +4,17 @@ import Link from 'next/link'
 import TSLogo from '../components/TSLogo'
 import "./globals.css"
 
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/components/ui/menubar"
+
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,20 +37,62 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body style={{ minHeight: '100dvh' }} className={'grid grid-rows-[auto_1fr_auto] min-h-screen bg-white  text-black'}>
 
-        <header className='py-2 px-2 md:px-4  text-black border-b-[1px] border-b-theme-grey/30'>
-          <ul>
-            <li>
-              <Link className='flex space-x-2 hover:opacity-90' href='/'>
-                <TSLogo height={75} />
-              </Link>
-            </li>
-          </ul>
+        <header className='py-2 text-black border-b-[1px] border-b-theme-grey/30'>
+
+          <div className='mx-auto max-w-screen-xl py-4 px-4 md:px-8 flex'>
+            <Menubar>
+              <MenubarMenu>
+                <MenubarTrigger>Desafios</MenubarTrigger>
+                <MenubarContent>
+                  <MenubarItem>
+                    <Link href={'/desafio-1'}>
+                      Desafio 1
+                    </Link>
+                  </MenubarItem>
+                  <MenubarSeparator />
+                  <MenubarItem>
+                    <Link href={'/desafio-2'}>
+                      Desafio 2
+                    </Link>
+                  </MenubarItem>
+                  <MenubarSeparator />
+                  <MenubarItem>
+                    <Link href={'/desafio-3'}>
+                      Desafio 3
+                    </Link>
+                  </MenubarItem>
+                  <MenubarSeparator />
+                  <MenubarItem>
+                    <Link href={'/desafio-4'}>
+                      Desafio 4
+                    </Link>
+                  </MenubarItem>
+                  <MenubarSeparator />
+                  <MenubarItem>
+                    <Link href={'/desafio-5'}>
+                      Desafio 5
+                    </Link>
+                  </MenubarItem>
+                  <MenubarSeparator />
+                </MenubarContent>
+              </MenubarMenu>
+            </Menubar>
+          </div>
+
+          <div className='mx-auto max-w-screen-xl py-4 px-4 md:px-8 flex'>
+            <Link className='flex space-x-2 hover:opacity-90' href='/'>
+              <TSLogo height={75} />
+            </Link>
+          </div>
+
         </header>
 
-        {children}
+        <main className='mx-auto max-w-screen-xl py-4 px-4 md:px-8 w-full'>
+          {children}
+        </main>
 
         <footer className="p-2 w-full bg-theme-grey text-white">
           <div className="w-full grid grid-rows-1 space-y-2 text-center items-center justify-center md:flex">
