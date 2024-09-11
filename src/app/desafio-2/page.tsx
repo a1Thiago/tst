@@ -35,7 +35,7 @@ export default function Page() {
         </Link>
       </div>
 
-      <h2 className='font-bold text-xl py-2'>Desafio 2</h2>
+      <h2 className='font-bold text-xl py-2'>Verificação na Sequência de Fibonacci</h2>
 
       <div className='[&_p]:font-semibold space-y-2'>
         <p>
@@ -60,10 +60,10 @@ export default function Page() {
         <div className='font-semibold'>
           {result
             ? (
-              <p className='text-green-700'>O número {number} está</p>
+              <p className='text-green-700'>O número {number} pertence a sequência de Fibonacci</p>
             )
             : (
-              <p className='text-red-700'>O número {number} nao está</p>
+              <p className='text-red-700'>O número {number} não pertence a sequência de Fibonacci</p>
             )
           }
         </div>
