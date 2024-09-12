@@ -1,8 +1,5 @@
 
-import Link from 'next/link'
-import * as jsonFile from '../../../public/dados.json'
-import { Button } from '@/components/ui/button'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import * as jsonFile from '../../../../public/dados.json'
 
 export default function Page() {
 
@@ -22,23 +19,7 @@ export default function Page() {
 
     <div className='space-y-4'>
 
-      <div className='flex justify-between py-4'>
-        <Link href='/desafio-2'>
-          <Button className='flex gap-1'>
-            <ChevronLeft size={16} />
-            <p>Desafio 2</p>
-          </Button>
-        </Link>
-
-        <Link href='/desafio-4'>
-          <Button className='flex gap-1'>
-            <ChevronRight size={16} />
-            <p>Desafio 4</p>
-          </Button>
-        </Link>
-      </div>
-
-      <h2 className='font-bold text-xl py-2'>Desafio 3</h2>
+      <h2 className='font-bold text-xl py-2'>Análise de Faturamento Diário</h2>
 
       <div className='[&_p]:font-semibold space-y-2'>
         <p>

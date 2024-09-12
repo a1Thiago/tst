@@ -12,6 +12,7 @@ import {
   MenubarSeparator,
   MenubarTrigger
 } from "@/components/ui/menubar"
+import tasks from '@/lib/tasks'
 
 
 const geistSans = localFont({
@@ -37,49 +38,32 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable}`}>
+
       <body style={{ minHeight: '100dvh' }} className={'grid grid-rows-[auto_1fr_auto] min-h-screen bg-white  text-black'}>
 
         <header className='py-2 text-black border-b-[1px] border-b-theme-grey/30'>
 
-          <div className='mx-auto max-w-screen-xl px-4 md:px-8 flex'>
+          <nav className='mx-auto max-w-screen-xl px-4 md:px-8 flex'>
             <Menubar>
               <MenubarMenu>
                 <MenubarTrigger className='cursor-pointer'>Desafios</MenubarTrigger>
                 <MenubarContent>
-                  <MenubarItem>
-                    <Link href={'/desafio-1'}>
-                      Desafio 1
-                    </Link>
-                  </MenubarItem>
-                  <MenubarSeparator />
-                  <MenubarItem>
-                    <Link href={'/desafio-2'}>
-                      Desafio 2
-                    </Link>
-                  </MenubarItem>
-                  <MenubarSeparator />
-                  <MenubarItem>
-                    <Link href={'/desafio-3'}>
-                      Desafio 3
-                    </Link>
-                  </MenubarItem>
-                  <MenubarSeparator />
-                  <MenubarItem>
-                    <Link href={'/desafio-4'}>
-                      Desafio 4
-                    </Link>
-                  </MenubarItem>
-                  <MenubarSeparator />
-                  <MenubarItem>
-                    <Link href={'/desafio-5'}>
-                      Desafio 5
-                    </Link>
-                  </MenubarItem>
-                  <MenubarSeparator />
+                  {tasks.map(task => {
+                    return (
+                      <div key={task.url}>
+                        <MenubarItem>
+                          <Link href={`/${task.url}`}>
+                            {task.desc}
+                          </Link>
+                        </MenubarItem>
+                        <MenubarSeparator />
+                      </div>
+                    )
+                  })}
                 </MenubarContent>
               </MenubarMenu>
             </Menubar>
-          </div>
+          </nav>
 
           <div className='mx-auto max-w-screen-xl py-4 px-4 md:px-8 flex'>
             <Link className='flex space-x-2 hover:opacity-90' href='/'>
@@ -104,6 +88,7 @@ export default function RootLayout({
         </footer>
 
       </body>
+
     </html>
   )
 }

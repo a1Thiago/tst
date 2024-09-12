@@ -1,9 +1,6 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { ChevronLeft } from 'lucide-react'
-import Link from 'next/link'
 import { ChangeEvent, useState } from 'react'
 
 export default function Page() {
@@ -18,16 +15,7 @@ export default function Page() {
 
     <div className='space-y-4'>
 
-      <div className='flex justify-between py-4'>
-        <Link href='/desafio-4'>
-          <Button className='flex gap-1'>
-            <ChevronLeft size={16} />
-            <p>Desafio 4</p>
-          </Button>
-        </Link>
-      </div>
-
-      <h2 className='font-bold text-xl py-2'>Desafio 5</h2>
+      <h2 className='font-bold text-xl py-2'>Inversão de String Manual</h2>
 
       <div className='[&_p]:font-semibold space-y-2'>
         <p>

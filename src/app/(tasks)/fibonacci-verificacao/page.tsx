@@ -1,8 +1,5 @@
 'use client'
-import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import Link from 'next/link'
 import { ChangeEvent, useState } from 'react'
 
 export default function Page() {
@@ -18,22 +15,6 @@ export default function Page() {
   return (
 
     <div className='space-y-4'>
-
-      <div className='flex justify-between py-4'>
-        <Link href='/desafio-1'>
-          <Button className='flex gap-1'>
-            <ChevronLeft size={16} />
-            <p>Desafio 1</p>
-          </Button>
-        </Link>
-
-        <Link href='/desafio-3'>
-          <Button className='flex gap-1'>
-            <ChevronRight size={16} />
-            <p>Desafio 3</p>
-          </Button>
-        </Link>
-      </div>
 
       <h2 className='font-bold text-xl py-2'>Verificação na Sequência de Fibonacci</h2>
 
