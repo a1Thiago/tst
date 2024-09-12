@@ -1,5 +1,16 @@
 
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import * as jsonFile from '../../../../public/dados.json'
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+import { Button } from '@/components/ui/button'
+
 
 export default function Page() {
 
@@ -38,6 +49,21 @@ export default function Page() {
           <br />
           b) Podem existir dias sem faturamento, como nos finais de semana e feriados. Estes dias devem ser ignorados no cálculo da média;
         </p>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger>
+              <Button>
+                dados.json
+              </Button>
+            </AccordionTrigger>
+            <AccordionContent>
+              <SyntaxHighlighter language="typescript" style={dracula}>
+                {JSON.stringify(dados, null, 2)}
+              </SyntaxHighlighter>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+
       </div>
 
       <div className='font-semibold'>
