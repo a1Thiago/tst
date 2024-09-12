@@ -30,7 +30,7 @@ export default function Home() {
 
       <span className='sr-only' id="object-label">Currículo de Thiago Henrique</span>
 
-      <object className='md:hidden' data="FS-ThiagoH.pdf" type="application/pdf" aria-labelledby="object-label" width='100%' height={500}>
+      <object className='md:hidden' data="FS-ThiagoH.pdf" type="application/pdf" aria-labelledby="object-label" width='100%' height={300}>
         <p>Incapaz de exibir o PDF nesse dispositivo. <a className='underline font-semibold ' href="FS-ThiagoH.pdf">Click aqui</a> para visualizar.</p>
       </object>
 
