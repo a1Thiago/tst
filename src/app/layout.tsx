@@ -53,7 +53,7 @@ export default function RootLayout({
                       <div key={task.url}>
                         <MenubarItem>
                           <Link href={`/${task.url}`}>
-                            {task.desc}
+                            {task.title}
                           </Link>
                         </MenubarItem>
                         <MenubarSeparator />

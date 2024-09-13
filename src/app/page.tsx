@@ -21,7 +21,7 @@ export default function Home() {
         {tasks.map(task => {
           return (
             <Link key={task.url} href={`/${task.url}`} className='flex items-center space-x-1 underline font-medium hover:opacity-85 mb-0.5'>
-              <p>{task.desc}</p>
+              <p>{task.title}</p>
               <Link1Icon />
             </Link>
           )
