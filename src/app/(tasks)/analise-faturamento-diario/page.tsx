@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Button } from '@/components/ui/button'
+import { Eye } from 'lucide-react'
 
 
 export default function Page() {
@@ -52,9 +52,10 @@ export default function Page() {
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger>
-              <Button>
-                dados.json
-              </Button>
+              <span className='flex gap-1.5 items-center'>
+                <p>dados.json</p>
+                <Eye size={16} />
+              </span>
             </AccordionTrigger>
             <AccordionContent>
               <SyntaxHighlighter language="typescript" style={dracula}>
