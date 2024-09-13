@@ -65,11 +65,9 @@ ${cumulativeSum(12, 0, 1)}
 
           <p>
             Observe o trecho de código abaixo:
-          </p>
-          <SyntaxHighlighter language="javascript" style={dracula}>
+            <br />
             {desafio1}
-          </SyntaxHighlighter>
-          <p>
+            <br />
             Ao final do processamento, qual será o valor da variável SOMA?
           </p>
 
@@ -95,11 +93,9 @@ ${cumulativeSum(12, 0, 1)}
 
           <p>
             Observe o trecho de código abaixo:
-          </p>
-          <SyntaxHighlighter language="javascript" style={dracula}>
+            <br />
             {desafio2}
-          </SyntaxHighlighter>
-          <p>
+            <br />
             Ao final do processamento, qual será o valor da variável SOMA?
           </p>
 
