@@ -96,6 +96,6 @@ function generateDailyRevenue(days: number) {
   return dailyRevenue
 }
 
-export function formatToBRL(value: number) {
+function formatToBRL(value: number) {
   return value.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 }
