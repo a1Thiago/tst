@@ -30,7 +30,7 @@ export default function Page() {
 
     <div className='space-y-4'>
 
-      <h2 className='font-bold text-xl py-2'>Análise de Faturamento Diário</h2>
+      <h2 className='font-bold text-xl py-2'>Análise de Faturamento Mensal</h2>
 
       <div className='[&_p]:font-semibold space-y-2'>
         <p>
