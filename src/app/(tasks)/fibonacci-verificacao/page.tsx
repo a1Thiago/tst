@@ -1,5 +1,5 @@
 'use client'
-import { Input } from '@/components/ui/input'
+import InputWithLabel from '@/components/InputWithLabel'
 import { ChangeEvent, useState } from 'react'
 
 export default function Page() {
@@ -29,14 +29,7 @@ export default function Page() {
 
       <div>
 
-        <div className="flex flex-col w-full max-w-sm">
-          <label htmlFor="number-input" className="mb-2 text-sm font-medium text-gray-700">
-            Número
-          </label>
-          <div className="flex items-center space-x-2">
-            <Input className='py-6 outline outline-2 outline-theme-primary/20' id="number-input" type="number" placeholder="Número" onChange={handleChange} min={0} value={number} />
-          </div>
-        </div>
+        <InputWithLabel id="number-input" label='Número' placeholder="Número" onChange={handleChange} min={0} value={number} />
 
         <div className='font-semibold'>
           {result

@@ -1,6 +1,6 @@
 'use client'
 
-import { Input } from '@/components/ui/input'
+import InputWithLabel from '@/components/InputWithLabel'
 import { ChangeEvent, useState } from 'react'
 
 export default function Page() {
@@ -31,15 +31,7 @@ export default function Page() {
       </div>
 
       <div className='font-semibold'>
-
-        <div className="flex flex-col w-full max-w-sm">
-          <label htmlFor="string-input" className="mb-2 text-sm font-medium text-gray-700">
-            String
-          </label>
-          <div className="flex items-center space-x-2">
-            <Input className='py-6 outline outline-2 outline-theme-primary/20' id="string-input" type="text" placeholder="String" onChange={handleChange} />
-          </div>
-        </div>
+        <InputWithLabel id="string-input" label='String' placeholder="String" onChange={handleChange} />
       </div>
 
       <p className='font-semibold text-lg'>{reversedString}</p>
