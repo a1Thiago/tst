@@ -37,7 +37,7 @@ export default function Page() {
             String
           </label>
           <div className="flex items-center space-x-2">
-            <Input className='py-6 outline outline-2 outline-theme-primary/50' id="string-input" type="text" placeholder="String" onChange={handleChange} />
+            <Input className='py-6 outline outline-2 outline-theme-primary/20' id="string-input" type="text" placeholder="String" onChange={handleChange} />
           </div>
         </div>
       </div>

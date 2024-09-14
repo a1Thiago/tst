@@ -34,7 +34,7 @@ export default function Page() {
             Número
           </label>
           <div className="flex items-center space-x-2">
-            <Input className='py-6 outline outline-2 outline-theme-primary/50' id="number-input" type="number" placeholder="Número" onChange={handleChange} min={0} value={number} />
+            <Input className='py-6 outline outline-2 outline-theme-primary/20' id="number-input" type="number" placeholder="Número" onChange={handleChange} min={0} value={number} />
           </div>
         </div>
 
