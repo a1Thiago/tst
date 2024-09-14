@@ -56,3 +56,15 @@ bun dev
 8. **Desafio dos Interruptores**  
    Resolva o enigma para identificar qual interruptor controla cada lâmpada em diferentes salas.  
    [Visualizar solução](https://desafio-targetsistemas.a1th.dev/desafio-interruptores)
+
+9. **Análise de Faturamento Anual**  
+   Cálculo do menor e maior valor de faturamento diário, além da média Anual.  
+   [Visualizar solução](https://desafio-targetsistemas.a1th.dev/analise-faturamento-anual)
+
+10. **Modelo de Banco de Dados para Cadastro de Clientes**  
+    Criação de um modelo lógico para um banco de dados que gerencia o cadastro de clientes e seus telefones.  
+    [Visualizar solução](https://desafio-targetsistemas.a1th.dev/modelo-banco-dados-clientes)
+
+11. **Problema de Encontro entre Veículos**  
+    Cálculo da posição relativa de dois veículos que se encontram em uma rodovia, considerando velocidades e pedágios.  
+    [Visualizar solução](https://desafio-targetsistemas.a1th.dev/problema-encontro-veiculos)
